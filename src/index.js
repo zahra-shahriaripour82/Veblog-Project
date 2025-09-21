@@ -8,6 +8,7 @@ import App from "./App";
 // this allow to all components to use this fonts beacuse
 //  it's import at the top of projects
 import "./styles/fonts.css";
+import { BrowserRouter } from "react-router-dom";
 
 
 const client = new ApolloClient({
@@ -19,9 +20,11 @@ const client = new ApolloClient({
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  <BrowserRouter>
   <ApolloProvider client={client}>
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
   </ApolloProvider>
+  </BrowserRouter>
 );
