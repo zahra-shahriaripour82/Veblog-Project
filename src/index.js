@@ -1,4 +1,4 @@
-import { ApolloClient, HttpLink, InMemoryCache, gql } from "@apollo/client";
+import { ApolloClient, HttpLink, InMemoryCache, } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client/react";
 import { ThemeProvider } from "@emotion/react";
 import theme from "./components/mtu/theme";

@@ -1,6 +1,5 @@
 import { gql } from "@apollo/client";
 import { useQuery } from "@apollo/client/react";
-import Header from "./components/layout/Header";
 import HomePage from "./components/home/HomePage";
 import Layout from "./components/layout";
 import { Route, Routes } from "react-router-dom";
@@ -16,7 +15,7 @@ const query = gql`
 `;
 
 function App() {
-  const { loading, data } = useQuery(query);
+  const { data } = useQuery(query);
   console.log(data);
 
   return (
