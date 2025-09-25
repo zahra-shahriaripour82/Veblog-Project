@@ -84,7 +84,7 @@ function BlogsPage() {
           <CommentForm slug={slug} />
         </Grid>
 
-        <Grid size={{xs:12}}>
+        <Grid size={{ xs: 12 }}>
           <Commets slug={slug} />
         </Grid>
       </Grid>

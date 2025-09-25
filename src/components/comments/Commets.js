@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/client/react";
 import { GET_POST_COMMENTS } from "../../graphql/queries";
-import { Avatar, Box, Grid, Typography } from "@mui/material";
+import { Avatar, Box,  Grid, Typography } from "@mui/material";
 
 function Commets({ slug }) {
   const { loading, data } = useQuery(GET_POST_COMMENTS, {
@@ -30,7 +30,7 @@ function Commets({ slug }) {
            sx={{
     m: 2,
     p: 2,
-    border:"1px solid silver" , 
+ 
    
     borderRadius: 1,
   }}
@@ -49,6 +49,7 @@ function Commets({ slug }) {
             <Typography component="p" variant="body1">
               {comment.text}
             </Typography>
+            
           </Grid>
         ))}
       </Grid>

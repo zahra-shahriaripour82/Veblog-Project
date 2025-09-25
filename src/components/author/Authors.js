@@ -1,10 +1,10 @@
+import React from "react";
 import { useQuery } from "@apollo/client/react";
 import { GET_AUTHORS_INFO } from "../../graphql/queries";
 
 import { Avatar, Divider, Grid, Typography } from "@mui/material";
 import Loader from "../../shared/Loader";
 import { Link } from "react-router-dom";
-import React from "react";
 
 function Authors() {
   const { data, loading, error } = useQuery(GET_AUTHORS_INFO);
@@ -36,7 +36,7 @@ function Authors() {
                 sx={{ marginLeft: 2 }}
               />
 
-              <Typography component="p" variant="p" color="text.secondary">
+              <Typography component="p" variant="body1" color="text.secondary">
                 {author.name}
               </Typography>
             </Link>
